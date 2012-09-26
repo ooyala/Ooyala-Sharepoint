@@ -1,0 +1,90 @@
+﻿body {
+  font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 12px; }
+
+.dataGridHeader {
+  width: 100%; }
+  .dataGridHeader th.resizeColumn {
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-top: auto;
+    padding-bottom: auto;
+    cursor: col-resize;
+    max-width: 2px;
+    width: 2px;
+    border-right: 1px solid #D9D9D9; }
+    .dataGridHeader th.resizeColumn .verticalbar
+{
+    position: absolute;
+    background-color: #777;
+    height: 0px;
+    width: 2px;
+    z-index: 100;
+    display: none;
+}
+
+.headerColor
+{
+  font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+.GridViewStyle
+{   
+    border-color:White;
+    border-style:inset;
+    border-width:medium;
+    background-color: #DDDDDD;
+    font-weight: normal;
+    color:Black;
+    font-family:Verdana;
+    font-size:12px;
+    width:100%;
+   
+}
+
+.GridViewAlternatingRowStyle
+{
+    background-color: #E7E7E7;
+    font-family:Verdana;
+    font-size:12px;
+    font-weight:normal;
+}
+
+.GridViewHeaderStyle
+{
+    background-color: white;
+    font-weight: bold;
+    color: White;
+}
+
+GridViewSelectedRowStyle
+{
+    background-color: #DDDDDD;
+    font-weight: bold;
+    color: Black;
+}
+
+.GridViewPagerStyle
+{
+    background-color: #284775;
+    color: #FFFFFF;
+}
+
+.GridViewFooterStyle
+{
+    background-color: #5D7B9D;
+    font-weight: bold;
+    color: White;
+}
+
+.GridViewPagerStyle
+{
+    background-color: #284775;
+    color: #FFFFFF;
+}
+
+.GridViewPagerStyle table /* to center the paging links*/
+{
+    margin: 0 auto 0 auto;
+}

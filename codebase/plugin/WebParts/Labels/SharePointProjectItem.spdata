@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="LabelsUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Labels\" Type="ElementManifest" />
+    <ProjectItemFile Source="Labels.webpart" Target="Labels\" Type="ElementFile" />
+    <ProjectItemFile Source="LabelsUserControl.ascx" Target="CONTROLTEMPLATES\OoyalaPlugin.AssetsThumbnailView\Labels\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="OoyalaPlugin.AssetsThumbnailView.Labels" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

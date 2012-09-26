@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E462E28-6B28-4D17-BEAC-1C706326A1B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OoyalaPlugin</RootNamespace>
+    <AssemblyName>OoyalaPlugin</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helper\WPHelper.cs" />
+    <Compile Include="WebParts\AssetsDetailsView\AssetsDetailsView.cs" />
+    <Compile Include="WebParts\AssetsDetailsView\AssetsDetailsViewUserControl.ascx.cs">
+      <DependentUpon>AssetsDetailsViewUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AssetsDetailsView\AssetsDetailsViewUserControl.ascx.designer.cs">
+      <DependentUpon>AssetsDetailsViewUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\AssetsThumbnailView\AssetsThumbnailView.cs" />
+    <Compile Include="WebParts\AssetsThumbnailView\AssetsThumbnailViewUserControl.ascx.cs">
+      <DependentUpon>AssetsThumbnailViewUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AssetsThumbnailView\AssetsThumbnailViewUserControl.ascx.designer.cs">
+      <DependentUpon>AssetsThumbnailViewUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Labels\Labels.cs" />
+    <Compile Include="WebParts\Labels\LabelsUserControl.ascx.cs">
+      <DependentUpon>LabelsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Labels\LabelsUserControl.ascx.designer.cs">
+      <DependentUpon>LabelsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Player\Player.cs" />
+    <Compile Include="WebParts\Player\PlayerUserControl.ascx.cs">
+      <DependentUpon>PlayerUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Player\PlayerUserControl.ascx.designer.cs">
+      <DependentUpon>PlayerUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\UploadSharePoint\UploadSharePoint.cs" />
+    <Compile Include="WebParts\UploadSharePoint\UploadSharePointUserControl.ascx.cs">
+      <DependentUpon>UploadSharePointUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\UploadSharePoint\UploadSharePointUserControl.ascx.designer.cs">
+      <DependentUpon>UploadSharePointUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\JsonHelper.cs" />
+    <Compile Include="Helper\JSON.cs" />
+    <Compile Include="WebParts\MediaPlayerSettings\MediaPlayerSettings.cs" />
+    <Compile Include="WebParts\MediaPlayerSettings\MediaPlayerSettingsUserControl.ascx.cs">
+      <DependentUpon>MediaPlayerSettingsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\MediaPlayerSettings\MediaPlayerSettingsUserControl.ascx.designer.cs">
+      <DependentUpon>MediaPlayerSettingsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\LoginEntity.cs" />
+    <Compile Include="Helper\OoyalaAPI.cs" />
+    <Compile Include="Model\OoyalaData.cs" />
+    <Compile Include="Model\OoyalaMediaUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\APISettings\APISettings.cs" />
+    <Compile Include="WebParts\APISettings\APISettingsUserControl.ascx.cs">
+      <DependentUpon>APISettingsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\APISettings\APISettingsUserControl.ascx.designer.cs">
+      <DependentUpon>APISettingsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\UploadLocal\UploadLocal.cs" />
+    <Compile Include="WebParts\UploadLocal\UploadLocalUserControl.ascx.cs">
+      <DependentUpon>UploadLocalUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\UploadLocal\UploadLocalUserControl.ascx.designer.cs">
+      <DependentUpon>UploadLocalUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\OoyalaPluginFeature\OoyalaPluginFeature.feature">
+      <FeatureId>{245a7479-3c66-4e43-9b4f-0a64e60550ca}</FeatureId>
+    </None>
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6a034779-8369-4e34-8876-daa71aecab8f}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\AssetsDetailsView\AssetsDetailsView.webpart" />
+    <None Include="WebParts\AssetsDetailsView\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e1847a70-393d-4dac-855c-561a32b2d212}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\AssetsThumbnailView\AssetsThumbnailView.webpart" />
+    <None Include="WebParts\Labels\Labels.webpart" />
+    <None Include="WebParts\Labels\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9d277f64-37ca-46c5-94a0-5761005536be}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\AssetsThumbnailView\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fea8c1cb-66ee-4a8b-b99b-2630c22b06be}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Player\Player.webpart" />
+    <None Include="WebParts\Player\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dec34e90-9f49-4e94-9531-e8a1914ec9ae}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{88aa4224-22b7-42f4-ba7f-019c36ca2ff4}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\UploadSharePoint\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{086f5e66-89d0-4472-b50d-d6e2955cd643}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\UploadSharePoint\UploadSharePoint.webpart" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{73e13a7f-425d-4fc7-b70a-83c64a906bcf}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="WebParts\MediaPlayerSettings\MediaPlayerSettings.webpart" />
+    <None Include="WebParts\MediaPlayerSettings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cdad67b3-e726-4618-9885-3c1968bfcd43}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{f15b63d3-e236-4970-aaa9-99b7753be080}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebParts\APISettings\APISettings.webpart" />
+    <None Include="WebParts\APISettings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fa4e8882-3e47-40a4-b166-e78a965c3198}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\UploadLocal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9660510a-4b9b-4252-aef6-dec2a54a2668}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\UploadLocal\UploadLocal.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layouts\OoyalaPlugin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\OoyalaPluginFeature\OoyalaPluginFeature.Template.xml">
+      <DependentUpon>OoyalaPluginFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\OoyalaPlugin\Accept_32.png" />
+    <Content Include="Images\OoyalaPlugin\Add_32.png" />
+    <Content Include="Images\OoyalaPlugin\button-reset-md.png" />
+    <Content Include="Images\OoyalaPlugin\Cancel_32.png" />
+    <Content Include="Images\OoyalaPlugin\Delete_32.png" />
+    <Content Include="Images\OoyalaPlugin\Edit_32.png" />
+    <Content Include="Images\OoyalaPlugin\Next_32.png" />
+    <Content Include="Images\OoyalaPlugin\Prev_32.png" />
+    <Content Include="Images\OoyalaPlugin\required-red-asterisk.gif" />
+    <Content Include="Images\OoyalaPlugin\reset.png" />
+    <Content Include="Images\OoyalaPlugin\UploadIcon.gif" />
+    <Content Include="WebParts\AssetsDetailsView\AssetsDetailsViewUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\AssetsDetailsView\Elements.xml" />
+    <Content Include="WebParts\AssetsThumbnailView\AssetsThumbnailViewUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\AssetsThumbnailView\Elements.xml" />
+    <Content Include="WebParts\Labels\Elements.xml" />
+    <Content Include="WebParts\Labels\LabelsUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Player\Elements.xml" />
+    <Content Include="WebParts\Player\PlayerUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\UploadSharePoint\Elements.xml" />
+    <Content Include="WebParts\UploadSharePoint\UploadSharePointUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\APISettings\APISettingsUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\APISettings\Elements.xml" />
+    <Content Include="WebParts\MediaPlayerSettings\Elements.xml" />
+    <Content Include="WebParts\MediaPlayerSettings\MediaPlayerSettingsUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\UploadLocal\Elements.xml" />
+    <Content Include="WebParts\UploadLocal\UploadLocalUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Images\OoyalaPlugin\AdAsset.PNG" />
+    <Content Include="Images\OoyalaPlugin\AudioAsset.PNG" />
+    <Content Include="Images\OoyalaPlugin\ChannelAsset.PNG" />
+    <Content Include="Images\OoyalaPlugin\ChannelSetAsset.PNG" />
+    <Content Include="Images\OoyalaPlugin\LiveStreamAsset.PNG" />
+    <Content Include="Images\OoyalaPlugin\Ooyala.png" />
+    <Content Include="Images\OoyalaPlugin\RemoteAsset.PNG" />
+    <Content Include="Images\OoyalaPlugin\VideoAdAsset.png" />
+    <Content Include="Images\OoyalaPlugin\VideoAsset.PNG" />
+    <Content Include="Images\OoyalaPlugin\YouTubeAsset.PNG" />
+    <Content Include="Images\OoyalaPlugin\Webpart.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

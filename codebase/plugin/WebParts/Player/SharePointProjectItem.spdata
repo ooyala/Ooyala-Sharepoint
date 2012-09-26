@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="PlayerUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Player\" Type="ElementManifest" />
+    <ProjectItemFile Source="Player.webpart" Target="Player\" Type="ElementFile" />
+    <ProjectItemFile Source="PlayerUserControl.ascx" Target="CONTROLTEMPLATES\OoyalaPlugin.WebParts.MediaPlayer\Player\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="OoyalaPlugin.WebParts.MediaPlayer.Player" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

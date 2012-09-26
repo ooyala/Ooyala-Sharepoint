@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f15b63d3-e236-4970-aaa9-99b7753be080" solutionId="f15b63d3-e236-4970-aaa9-99b7753be080" resetWebServer="false" name="OoyalaPluginPackage" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="245a7479-3c66-4e43-9b4f-0a64e60550ca" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="73e13a7f-425d-4fc7-b70a-83c64a906bcf" />
+    <projectItemReference itemId="6a034779-8369-4e34-8876-daa71aecab8f" />
+  </projectItems>
+</package>

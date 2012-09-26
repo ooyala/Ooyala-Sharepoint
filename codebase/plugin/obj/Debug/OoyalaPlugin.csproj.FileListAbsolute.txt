@@ -1,0 +1,10 @@
+C:\Karlmarx\OoyalaPluginTest\OoyalaPluginTest\bin\Debug\OoyalaPlugin.dll
+C:\Karlmarx\OoyalaPluginTest\OoyalaPluginTest\bin\Debug\OoyalaPlugin.pdb
+C:\Karlmarx\OoyalaPluginTest\OoyalaPluginTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Karlmarx\OoyalaPluginTest\OoyalaPluginTest\obj\Debug\OoyalaPlugin.dll
+C:\Karlmarx\OoyalaPluginTest\OoyalaPluginTest\obj\Debug\OoyalaPlugin.pdb
+C:\Karlmarx\OoyalaPlugin\OoyalaPlugin\bin\Debug\OoyalaPlugin.dll
+C:\Karlmarx\OoyalaPlugin\OoyalaPlugin\bin\Debug\OoyalaPlugin.pdb
+C:\Karlmarx\OoyalaPlugin\OoyalaPlugin\obj\Debug\ResolveAssemblyReference.cache
+C:\Karlmarx\OoyalaPlugin\OoyalaPlugin\obj\Debug\OoyalaPlugin.dll
+C:\Karlmarx\OoyalaPlugin\OoyalaPlugin\obj\Debug\OoyalaPlugin.pdb

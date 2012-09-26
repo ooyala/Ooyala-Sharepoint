@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="f15b63d3-e236-4970-aaa9-99b7753be080" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="OoyalaPlugin.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="OoyalaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=84ea112d1e541612" Namespace="OoyalaPlugin.WP_API_Settings.APISettings" TypeName="*" />
+        <SafeControl Assembly="OoyalaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=84ea112d1e541612" Namespace="OoyalaPlugin.AssetsDetailsView" TypeName="*" />
+        <SafeControl Assembly="OoyalaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=84ea112d1e541612" Namespace="OoyalaPlugin.AssetsThumbnailView" TypeName="*" />
+        <SafeControl Assembly="OoyalaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=84ea112d1e541612" Namespace="OoyalaPlugin.AssetsThumbnailView.Labels" TypeName="*" />
+        <SafeControl Assembly="OoyalaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=84ea112d1e541612" Namespace="OoyalaPlugin.MediaPlayer" TypeName="*" />
+        <SafeControl Assembly="OoyalaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=84ea112d1e541612" Namespace="OoyalaPlugin.MediaPlayerSettings" TypeName="*" />
+        <SafeControl Assembly="OoyalaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=84ea112d1e541612" Namespace="OoyalaPlugin.UploadLocal" TypeName="*" />
+        <SafeControl Assembly="OoyalaPlugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=84ea112d1e541612" Namespace="OoyalaPlugin.Controls.UploadSharePoint" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\OoyalaPlugin.WP_API_Settings\APISettings\APISettingsUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\OoyalaPlugin\AssetsDetailsView\AssetsDetailsViewUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\OoyalaPlugin\AssetsThumbnailView\AssetsThumbnailViewUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\OoyalaPlugin.AssetsThumbnailView\Labels\LabelsUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\OoyalaPlugin\MediaPlayerSettings\MediaPlayerSettingsUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\OoyalaPlugin\UploadLocal\UploadLocalUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\OoyalaPlugin.Controls\UploadSharePoint\UploadSharePointUserControl.ascx" />
+    <TemplateFile Location="Images\OoyalaPlugin\Accept_32.png" />
+    <TemplateFile Location="Images\OoyalaPlugin\Add_32.png" />
+    <TemplateFile Location="Images\OoyalaPlugin\button-reset-md.png" />
+    <TemplateFile Location="Images\OoyalaPlugin\Cancel_32.png" />
+    <TemplateFile Location="Images\OoyalaPlugin\Delete_32.png" />
+    <TemplateFile Location="Images\OoyalaPlugin\Edit_32.png" />
+    <TemplateFile Location="Images\OoyalaPlugin\Next_32.png" />
+    <TemplateFile Location="Images\OoyalaPlugin\Prev_32.png" />
+    <TemplateFile Location="Images\OoyalaPlugin\required-red-asterisk.gif" />
+    <TemplateFile Location="Images\OoyalaPlugin\reset.png" />
+    <TemplateFile Location="Images\OoyalaPlugin\AdAsset.PNG" />
+    <TemplateFile Location="Images\OoyalaPlugin\AudioAsset.PNG" />
+    <TemplateFile Location="Images\OoyalaPlugin\ChannelAsset.PNG" />
+    <TemplateFile Location="Images\OoyalaPlugin\ChannelSetAsset.PNG" />
+    <TemplateFile Location="Images\OoyalaPlugin\LiveStreamAsset.PNG" />
+    <TemplateFile Location="Images\OoyalaPlugin\Ooyala.png" />
+    <TemplateFile Location="Images\OoyalaPlugin\RemoteAsset.PNG" />
+    <TemplateFile Location="Images\OoyalaPlugin\UploadIcon.gif" />
+    <TemplateFile Location="Images\OoyalaPlugin\VideoAdAsset.png" />
+    <TemplateFile Location="Images\OoyalaPlugin\VideoAsset.PNG" />
+    <TemplateFile Location="Images\OoyalaPlugin\YouTubeAsset.PNG" />
+    <TemplateFile Location="Images\OoyalaPlugin\Webpart.css" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="OoyalaPlugin_OoyalaPluginFeature\Feature.xml" />
+  </FeatureManifests>
+</Solution>

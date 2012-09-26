@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="AssetsDetailsViewUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="AssetsDetailsView\" Type="ElementManifest" />
+    <ProjectItemFile Source="AssetsDetailsView.webpart" Target="AssetsDetailsView\" Type="ElementFile" />
+    <ProjectItemFile Source="AssetsDetailsViewUserControl.ascx" Target="CONTROLTEMPLATES\OoyalaPlugin\AssetsDetailsView\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="OoyalaPlugin.AssetsDetailsView" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>
