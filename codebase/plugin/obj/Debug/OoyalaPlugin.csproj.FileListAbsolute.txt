@@ -8,3 +8,8 @@ C:\Karlmarx\OoyalaPlugin\OoyalaPlugin\bin\Debug\OoyalaPlugin.pdb
 C:\Karlmarx\OoyalaPlugin\OoyalaPlugin\obj\Debug\ResolveAssemblyReference.cache
 C:\Karlmarx\OoyalaPlugin\OoyalaPlugin\obj\Debug\OoyalaPlugin.dll
 C:\Karlmarx\OoyalaPlugin\OoyalaPlugin\obj\Debug\OoyalaPlugin.pdb
+C:\Users\user\Desktop\codebase\plugin\bin\Debug\OoyalaPlugin.dll
+C:\Users\user\Desktop\codebase\plugin\bin\Debug\OoyalaPlugin.pdb
+C:\Users\user\Desktop\codebase\plugin\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\codebase\plugin\obj\Debug\OoyalaPlugin.dll
+C:\Users\user\Desktop\codebase\plugin\obj\Debug\OoyalaPlugin.pdb

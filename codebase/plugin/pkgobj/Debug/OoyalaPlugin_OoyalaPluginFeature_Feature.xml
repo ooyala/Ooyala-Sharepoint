@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="OoyalaPluginFeature" Id="196d1e1f-31a8-4d4a-a88b-ad31fa8d1437" Scope="Site" Title="OoyalaPluginFeature">
+  <ElementManifests>
+    <ElementManifest Location="APISettings\Elements.xml" />
+    <ElementFile Location="APISettings\APISettings.webpart" />
+    <ElementManifest Location="AssetsDetailsView\Elements.xml" />
+    <ElementFile Location="AssetsDetailsView\AssetsDetailsView.webpart" />
+    <ElementManifest Location="AssetsThumbnailView\Elements.xml" />
+    <ElementFile Location="AssetsThumbnailView\AssetsThumbnailView.webpart" />
+    <ElementManifest Location="Labels\Elements.xml" />
+    <ElementFile Location="Labels\Labels.webpart" />
+    <ElementManifest Location="MediaPlayerSettings\Elements.xml" />
+    <ElementFile Location="MediaPlayerSettings\MediaPlayerSettings.webpart" />
+    <ElementManifest Location="UploadLocal\Elements.xml" />
+    <ElementFile Location="UploadLocal\UploadLocal.webpart" />
+    <ElementManifest Location="UploadSharePoint\Elements.xml" />
+    <ElementFile Location="UploadSharePoint\UploadSharePoint.webpart" />
+    <ElementManifest Location="Player\Elements.xml" />
+    <ElementFile Location="Player\Player.webpart" />
+  </ElementManifests>
+</Feature>
